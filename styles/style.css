@@ -75,7 +75,100 @@ label {
 
 /* header section end */
 
+/* journey section start */
+.journey {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
 
+.journeyDetails {
+    width: 80%;
+}
+
+.journeyDetails h1 {
+    font-size: 52px;
+    font-weight: bold;
+    color: #394867;
+}
+
+.journeyDetails p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #3A3A3A;
+    width: 60%;
+    margin: 15px 0 30px 0;
+}
+
+.commonBtn {
+    width: 196px;
+    height: 44px;
+    background-color: #212A3E;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.commonBtn input {
+    border: none;
+    background-color: inherit;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.commonBtn i {
+    color: #ffffff;
+    margin-left: 10px;
+    font-size: 16px;
+    transition: all ease .5s;
+    cursor: pointer;
+}
+
+.commonBtn:hover i {
+    transform: scale(1.5);
+}
+
+.journeyImg {
+    text-align: center;
+}
+
+.journeyImg img {
+    width: 440px;
+    height: 414px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, .03);
+    transition: all ease .5s;
+}
+
+.journeyImg:hover img {
+    transform: translate(5px);
+}
+
+/* journey section end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query start */
 
 @media screen and (max-width: 768px) {
 
@@ -124,13 +217,48 @@ label {
         top: 65px;
         left: 0;
         text-align: center;
-        background-color: rgba(0, 0, 0, .03);
+        background-color: #394867;
         padding: 20px 0 0 0;
+        z-index: 99;
     }
 
     .headerLink a {
+        color: #ffffff;
         margin: 0 0 20px 0;
     }
+}
 
+
+
+@media screen and (max-width: 992px) {
+    .journey {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .journeyImg img {
+        width: 257px;
+        height: 257px;
+    }
+
+    .journeyDetails {
+        width: 100%;
+        text-align: center;
+    }
+
+    .journeyDetails h1 {
+        font-size: 28px;
+    }
+
+    .journeyDetails p {
+        width: 100%;
+    }
+
+    .commonBtn {
+        width: 100%;
+    }
 
 }
+
+/* media query end */
