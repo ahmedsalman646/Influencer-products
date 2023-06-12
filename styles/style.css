@@ -188,6 +188,18 @@ label {
 
 
 /* populer collection section start */
+
+.popularCollection {
+    text-align: center;
+}
+
+.popularTitle {
+    color: #394867;
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
 .collections {
     display: flex;
     flex-wrap: wrap;
