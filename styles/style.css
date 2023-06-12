@@ -175,6 +175,15 @@ label {
     align-items: center;
 }
 
+.pay img {
+    cursor: pointer;
+    transition: all ease .5s;
+}
+
+.pay img:hover {
+    transform: translateY(-5px);
+}
+
 /* pay section end */
 
 
