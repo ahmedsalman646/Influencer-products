@@ -321,6 +321,59 @@ label {
 /* feature section end */
 
 
+/* footer section start */
+footer {
+    background-color: #212A3E;
+}
+
+.footerSection {
+    text-align: center;
+    padding: 50px 0;
+    color: #ffffff;
+}
+
+.footerTitle {
+    font-size: 24px;
+}
+
+.footerCopyRight {
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+.footerSection span {
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: #6C6C6C;
+    display: inline-block;
+}
+
+.footerSocial {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footerSocial a {
+    color: #fff;
+    box-shadow: 1px 0 20px 6px rgba(0, 0, 0, .1);
+    padding: 5px;
+    border-radius: 50%;
+
+}
+
+.footerSocial a i {
+    font-size: 24px;
+    transition: all ease 1s;
+}
+
+.footerSocial a:hover i {
+    transform: scale(1.1) translateY(-5px);
+}
+
+/* footer section end */
+
+
 
 
 
