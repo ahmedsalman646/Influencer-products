@@ -282,6 +282,46 @@ label {
 /* populer collection section end */
 
 
+/* feature section start */
+.featureSection {
+    background-color: rgba(0, 0, 0, .03);
+}
+
+.feature {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+    row-gap: 20px;
+    padding: 50px 0;
+}
+
+.featureBanner img {
+    width: 320px;
+}
+
+.featureInfo {
+    width: 50%;
+}
+
+.featureInfo h2 {
+    font-size: 38px;
+    color: #394867;
+}
+
+.featureInfo p {
+    width: 90%;
+    margin: 20px 0 40px 0;
+    color: #6C6C6C;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* feature section end */
+
+
+
 
 
 
@@ -391,6 +431,30 @@ label {
 
     .pay {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .feature {
+        flex-direction: column-reverse;
+    }
+
+    .featureBanner {
+        width: 280px;
+    }
+
+    .featureBanner img {
+        width: 280px;
+    }
+
+    .featureInfo {
+        width: 100%;
+    }
+
+    .featureInfo h2 {
+        font-size: 28px;
+    }
+
+    .featureInfo p {
+        width: 100%;
     }
 
 }
