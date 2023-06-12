@@ -11,13 +11,17 @@
 
 .container {
     width: 90%;
-    margin: 20px auto;
+    margin: 100px auto;
 }
 
 /* common styles end */
 
 
 /* header section start */
+header {
+    width: 90%;
+    margin: 20px auto;
+}
 
 nav {
     display: flex;
@@ -154,6 +158,25 @@ label {
 /* journey section end */
 
 
+/* pay section start */
+.paySection {
+    display: flex;
+    justify-content: center;
+}
+
+.pay {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+    justify-items: center;
+    border-top: 1px solid rgba(0, 0, 0, .07);
+    border-bottom: 1px solid rgba(0, 0, 0, .07);
+    padding: 30px;
+    align-items: center;
+}
+
+/* pay section end */
+
 
 
 
@@ -226,6 +249,10 @@ label {
         color: #ffffff;
         margin: 0 0 20px 0;
     }
+
+    .pay img {
+        width: 50px;
+    }
 }
 
 
@@ -257,6 +284,10 @@ label {
 
     .commonBtn {
         width: 100%;
+    }
+
+    .pay {
+        grid-template-columns: repeat(4, 1fr);
     }
 
 }
